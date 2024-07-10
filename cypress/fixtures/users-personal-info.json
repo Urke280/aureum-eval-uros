@@ -1,0 +1,26 @@
+[
+  {
+    "first_name":"Rocky",
+    "last_name":"Balboa",
+    "zip_code":"15000",
+    "status": "ok"
+  },
+  {
+    "first_name":"",
+    "last_name":"Balboa",
+    "zip_code":"15000",
+    "status": "no_first_name"
+  },
+  {
+    "first_name":"Rocky",
+    "last_name":"",
+    "zip_code":"15000",
+    "status": "no_last_name"
+  },
+  {
+    "first_name":"Rocky",
+    "last_name":"Balboa",
+    "zip_code":"",
+    "status": "no_zip_code"
+  }
+]

@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+export function visitAndProcessElement($element, callback) {
+  $element.each((index, domElement) => {
+    callback(domElement);
+  });
+  $element.children().each((index, childElement) => {
+    visitAndProcessElement(Cypress.$(childElement), callback);
+  });
+}

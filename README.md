@@ -16,7 +16,7 @@ of SauceDemo website. Reporting is implemented using Mochawesome reporter.
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Urke280/AllWynTest.git
+   git clone https://github.com/Urke280/aureum-eval-uros.git
    ```
 2. Navigate into the project directory:
    ```bash
@@ -54,6 +54,8 @@ cypress-project/
 ├── package.json
 ├── package-lock.json
 └── README.md
+└── Test-Strategy-Plan_Matrix.xslx
+
 ```
 
 ### Explanation:
@@ -65,6 +67,7 @@ cypress-project/
         - **`pages/`**: Page classes containing selectors and methods.
 - **`cypress.config.js`**: Cypress configuration file, also contains environment variables.
 - **`package.json`**: Node.js package configuration file.
+- **`Test-Strategy-Plan_Matrix.xslx`**: Contains test strategy, test plan and risk matrix. Not usually part of an automated solution, but added here for easier access
 
 ## Running Tests
 
@@ -87,7 +90,7 @@ npx cypress open
 - **base.page**: This class contains selectors and methods related to Cart button
   and Hamburger menu, both of which appear on a number of pages.
 - **checkout.page**: Selectors and methods for Checkout page are located here.
-- **inventory.page**: Selectors and methods for main store page are located here.
+- **inventory.page**: Selectors and methods for main store page are located here. Also, bonus task with DOM manipulation is located here as it is using an element from Inventory page.
 - **item.deatils.page**: This class contains selectors and methods for item details page. They are
   universal, so there was no need to write it for each item separately.
 - **login.page**: This class contains selectors and methods for the Login page.
@@ -103,5 +106,7 @@ npx cypress open
 - **login.cy**: Contains tests for login. There is a data-driven test that pulls data from cypress.config file, and verifies
   different login combinations of username and password.
 - **shopping.cart.cy**: Contains tests related to the Shopping cart.
+- **api.tests.cy**: Contains API test demonstrating usage of API calls on petstore.swagger.io
+
 ---
 
